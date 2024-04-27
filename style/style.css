@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --cream-bg:#F2EAE2;
@@ -11,22 +11,22 @@
 }
 
 body {
-    background: var(--cream-bg);
+    background-color:var(--cream-bg);
     min-height: 100vh;
     display: grid;
     place-items: center;
 }
 
-    .container {
-        display: flex;
-        max-width: 37.5rem;
-        max-height: 28.125rem;
-        border-radius: 0.625rem;
-        background: var(--pure-white);    
-    }
+.container {
+    display: flex;
+    width: 37.5rem;
+    max-width: 37.5rem;
+    max-height: 28.125rem;
+    border-radius: 0.625rem;
+   background: var(--pure-white);   
+}
 
-
-    /* CONTAINER RIGHT */
+ /* CONTAINER RIGHT */
 
     .container_right {
         padding: 2rem;
@@ -43,7 +43,7 @@ body {
         line-height: 2rem;
     }
 
-    .container_right p {
+.container_right p {
         margin-top: 1.5rem;
         /* text style */
         color: var(--aurometal-saurus);
@@ -56,14 +56,14 @@ body {
 
     /* PRICE */
 
-    .price {
+.price {
         display: flex;
         align-items: center;
         gap: 1.2rem;
         margin-top: 1.8rem;
     }
 
-    .discount_price {
+.discount_price {
         color: var(--deep-aquamarine);
         font-family: "Fraunces", serif;
         font-size: clamp(1.5rem, 2rem + 1vw, 2rem);
@@ -72,7 +72,7 @@ body {
         line-height: 2rem;
     }
 
-    .inicial_price {
+.inicial_price {
         color: var(--aurometal-saurus);
         font-family: "Montserrat", sans-serif;
         font-size: clamp(0.5rem, 0.8rem + 1vw, 0.9rem);
@@ -84,7 +84,7 @@ body {
 
     /* BOTAO */
 
-    button {
+button {
         max-width: 18rem;
         max-height: 3rem;
         padding: 0.9rem 3.9rem;
@@ -95,9 +95,11 @@ body {
         margin-right: auto;
         gap: 0.5rem;
         border: none;
+    
         /* button style */
         border-radius: 0.5rem;
         background: var(--deep-aquamarine);
+    
         /* text style */
         color: var(--pure-white);
         font-family: "Montserrat", sans-serif;
@@ -107,68 +109,65 @@ body {
         line-height: normal;
     }
 
-    button:hover {
+button:hover {
         background: var(--deep-aquamarine-hover);
         cursor: pointer;
     }
-
-
-/* RESPONSIVIDADE */
-
+   
 @media only screen and (min-width: 630px) {
-
-    .picture {
+    
+    .picture{
         content: url("assets/perfume-desktop.svg");
         border-radius: 0.625rem 0rem 0rem 0.625rem;
+        
     }
-
-  }
-
-/* MOBILE VIEW */
+}
 
 @media only screen and (max-width: 630px) {
-
-    .container {
+    
+    .container{
         flex-direction: column;
         max-width: 21rem;
         max-height: 40rem;
     }
 
-    .picture {
+    .picture{
         content: url("assets/perfume-mobile.svg");
         border-radius: 0.625rem 0.625rem 0rem 0rem;
         width: 21rem;
     }
-        /* CONTAINER RIGHT */
-    
-        .container_right {
-            padding: 1.5rem;
-        }
-    
-        .container_right h1 {
-            margin-top: 0.75rem;
+
+    .container_right {
+        padding: 1.5rem;
     }
-    
-        .container_right p {
-            margin-top: 1rem;
-        }
-        
-        /* PRICE */
-        
-        .price {
-            margin-top: 1.5rem;
-        }
-        
-        /* BOTAO */
-        
-        button {
-            padding: 0.9rem 5rem;
-            margin-top: 1.25rem
-        }
-        
-        button:hover {
-            background: var(--deep-aquamarine-hover);
-            cursor: pointer;
-        }
+
+    .container_right h1 {
+        margin-top: 0.75rem;
+}
+
+    .container_right p {
+        margin-top: 1rem;
+    }
+
+    /* PRICE */
+
+    .price {
+        margin-top: 1.5rem;
+    }
+
+    /* BOTAO */
+
+    button {
+        padding: 0.9rem 5rem;
+        margin-top: 1.25rem
+    }
 
 }
+
+
+
+
+
+
+
+
