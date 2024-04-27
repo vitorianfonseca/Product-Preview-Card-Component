@@ -23,7 +23,7 @@ body {
     max-width: 37.5rem;
     max-height: 28.125rem;
     border-radius: 0.625rem;
-    background: var(--Pure-White);
+    background: var(--pure-white);
 }
 
 .container_right {
@@ -31,7 +31,7 @@ body {
 }
 .container_right h1 {
     margin-top: 1.25rem;
-    color: var(--Gunmetal);
+    color: var(--gunmetal);
 
     font-family: "Fraunces", serif;
     font-size: clamp(1.5rem, 2rem + 1vw, 2.3rem);
@@ -42,7 +42,7 @@ body {
 
 .container_right p {
     margin-top: 1.5rem;
-    color: var(--Aurometal-Saurus);
+    color: var(--aurometal-saurus);
     
     /* Body */
     font-family: "Montserrat", sans-serif;
@@ -59,7 +59,7 @@ body {
 }
 
 .final_price {
-    color: var(--Deep-Aquamarine);
+    color: var(--deep-aquamarine);
 
     /* Display */
     font-family: "Fraunces", serif;
@@ -72,7 +72,7 @@ body {
 .initial_price {
     margin-left: 1.19rem;
     
-    color: var(--Aurometal-Saurus);
+    color: var(--aurometal-saurus);
     font-family: "Montserrat", sans-serif;
     font-size: clamp(0.5rem, 0.8rem + 1vw, 0.9rem);
     font-style: normal;
@@ -91,9 +91,9 @@ button {
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.5rem;
-    background: var(--Deep-Aquamarine);
+    background: var(--deep-aquamarine);
     padding: 0.94rem 3.94rem; 
-    color: var(--Pure-White);
+    color: var(--pure-white);
     border: none;
 
     /* Button Text */
@@ -110,7 +110,7 @@ button:hover {
     background: var(--deep-aquamarine-hover);
     cursor: pointer;
 
-    color: var( --Pure-White);
+    color: var( --pure-white);
 }
    
 @media only screen and (min-width: 630px) {
@@ -159,11 +159,6 @@ button:hover {
     button {
         padding: 0.9rem 5rem;
         margin-top: 1.25rem
-    }
-
-    button:hover {
-        background: var(--deep-aquamarine-hover);
-        cursor: pointer;
     }
 
 }
