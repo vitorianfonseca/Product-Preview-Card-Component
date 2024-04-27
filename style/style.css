@@ -11,13 +11,22 @@
 }
 
 body {
-    background-color:var(--cream-bg);
+    background: var(--cream-bg);
     min-height: 100vh;
     display: grid;
     place-items: center;
 }
 
- /* CONTAINER RIGHT */
+    .container {
+        display: flex;
+        max-width: 37.5rem;
+        max-height: 28.125rem;
+        border-radius: 0.625rem;
+        background: var(--pure-white);    
+    }
+
+
+    /* CONTAINER RIGHT */
 
     .container_right {
         padding: 2rem;
@@ -102,56 +111,64 @@ body {
         background: var(--deep-aquamarine-hover);
         cursor: pointer;
     }
-   
+
+
+/* RESPONSIVIDADE */
+
 @media only screen and (min-width: 630px) {
-    
-    .picture{
+
+    .picture {
         content: url("assets/perfume-desktop.svg");
         border-radius: 0.625rem 0rem 0rem 0.625rem;
-        
     }
-}
+
+  }
+
+/* MOBILE VIEW */
 
 @media only screen and (max-width: 630px) {
-    
-    .container{
+
+    .container {
         flex-direction: column;
         max-width: 21rem;
         max-height: 40rem;
     }
 
-    .picture{
+    .picture {
         content: url("assets/perfume-mobile.svg");
         border-radius: 0.625rem 0.625rem 0rem 0rem;
         width: 21rem;
     }
-
-    .container_right {
-        padding: 1.5rem;
+        /* CONTAINER RIGHT */
+    
+        .container_right {
+            padding: 1.5rem;
+        }
+    
+        .container_right h1 {
+            margin-top: 0.75rem;
     }
-
-    .container_right h1 {
-        margin-top: 0.75rem;
-}
-
-    .container_right p {
-        margin-top: 1rem;
-    }
-
-    /* PRICE */
-
-    .price {
-        margin-top: 1.5rem;
-    }
-
-    /* BOTAO */
-
-    button {
-        padding: 0.9rem 5rem;
-        margin-top: 1.25rem
-    }
-
-}
-
+    
+        .container_right p {
+            margin-top: 1rem;
+        }
+        
+        /* PRICE */
+        
+        .price {
+            margin-top: 1.5rem;
+        }
+        
+        /* BOTAO */
+        
+        button {
+            padding: 0.9rem 5rem;
+            margin-top: 1.25rem
+        }
+        
+        button:hover {
+            background: var(--deep-aquamarine-hover);
+            cursor: pointer;
+        }
 
 }
